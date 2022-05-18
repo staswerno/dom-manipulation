@@ -15,4 +15,19 @@
 - create new html elements and insert them into the dom / page
 - attach event listeners to elements
 
-next video:
+## console
+
+type 'document' to see entire document
+
+## selectors
+
+document.
+
+getElementById('idName')
+getElementByClassName('className')
+    creates html collection - like an array, but not exactly
+    can select items using indexing (eg titles[0])
+getElementsByTagName('h1')
+    also accessible with indexes
+
+next video: https://www.youtube.com/watch?v=oUpEKosnC8E&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=4
