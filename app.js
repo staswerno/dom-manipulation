@@ -1,13 +1,12 @@
-const blrw = document.querySelector("#book-list li:nth-child(2) .name");
-console.log(blrw);
+const books = document.querySelectorAll("#book-list li .name");
 
-// querySelector only returns ONE element!
-let books = document.querySelector("#book-list li .name");
-console.log(books);
+// note textContent property
+// += appends instead of changes
+books.forEach((book) => {
+	book.textContent += " (book title)";
+});
 
-// ALL returns collection
-books = document.querySelectorAll("#book-list li .name");
-console.log(books);
-
-// see arraynotes.js for Array.from info
-Array.from(books).forEach((book) => console.log(book));
+const bookList = document.querySelector("#book-list");
+// bookList.innerHTML = "<h2>BOOKS BOOKS BOOKS</h2>";
+bookList.innerHTML += "<p>this iz how add htlm</p>";
+console.log(bookList.innerHTML);

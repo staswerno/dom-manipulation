@@ -30,4 +30,4 @@ getElementByClassName('className')
 getElementsByTagName('h1')
     also accessible with indexes
 
-next video: https://www.youtube.com/watch?v=hDN5IGUv3Yw&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=5
+next video: https://www.youtube.com/watch?v=YIG2_UB-C7o&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=6
