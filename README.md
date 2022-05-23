@@ -41,4 +41,8 @@ can be:
 
 full list of node types here: https://www.w3schools.com/jsref/prop_node_nodetype.asp#:~:text=If%20the%20node%20is%20an,nodeType%20property%20will%20return%208.
 
-next video: https://www.youtube.com/watch?v=VMRo6Uv856E&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=7
+## events
+
+full list of click events here: https://www.w3schools.com/jsref/dom_obj_event.asp
+
+next video: https://www.youtube.com/watch?v=SqQZ8SttQsI&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=10
