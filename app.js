@@ -72,11 +72,11 @@ console.log("book-list next sibling is:", bookList3.nextSibling);
 console.log("book-list next element sibling is:", bookList3.nextElementSibling);
 
 // includes line break
-console.log("book-list next sibling is:", bookList3.previousSibling);
+console.log("book-list previous sibling is:", bookList3.previousSibling);
 
 // doesn't include line break
 console.log(
-	"book-list next element sibling is:",
+	"book-list previous element sibling is:",
 	bookList3.previousElementSibling
 );
 
