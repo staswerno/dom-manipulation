@@ -95,6 +95,7 @@ h2.addEventListener("click", (e) => {
 let btns = document.querySelectorAll("#book-list .delete");
 
 // parent/child bit confusing but explained well in video 11 about 6min on
+// more efficient method using event bubbling below
 
 btns.forEach((btn) => {
 	btn.addEventListener("click", (e) => {
@@ -109,4 +110,16 @@ const link = document.querySelector("#page-banner a");
 link.addEventListener("click", (e) => {
 	e.preventDefault();
 	console.log("navigation to ", e.target.textContent, " was prevented");
+});
+
+// event bubbling
+// event always bubbles up to parent
+
+// delete books
+const list = document.querySelector("#book-list ul");
+list.addEventListener("click", (e) => {
+	if (e.target.className === "delete") {
+		const li = e.target.parentElement;
+		list.removeChild(li);
+	}
 });
