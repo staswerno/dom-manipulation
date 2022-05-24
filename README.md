@@ -45,4 +45,4 @@ full list of node types here: https://www.w3schools.com/jsref/prop_node_nodetype
 
 full list of click events here: https://www.w3schools.com/jsref/dom_obj_event.asp
 
-next video: https://www.youtube.com/watch?v=SqQZ8SttQsI&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=10
+next video: https://www.youtube.com/watch?v=Nx2AhrCIlXE&list=PL4cUxeGkcC9gfoKa5la9dsdCNpuey2s-V&index=12

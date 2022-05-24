@@ -123,3 +123,18 @@ list.addEventListener("click", (e) => {
 		list.removeChild(li);
 	}
 });
+
+// forms
+// document.forms[index OR id]
+// want to listen to the form's 'submit event'
+// attach to form not button itself
+
+// add book-list
+
+const addForm = document.forms["add-book"];
+
+addForm.addEventListener("submit", (e) => {
+	e.preventDefault();
+	const value = addForm.querySelector('input[type="text"]').value;
+	console.log(value);
+});
