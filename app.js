@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+	//	CAN PUT ALL CODE IN HERE IF SCRIPT AT TOP OF HTML SO DOM LOADS FIRST
+});
+
 var titles = document.getElementsByClassName("title");
 
 console.log(Array.isArray(titles)); // false
@@ -208,12 +212,13 @@ tabs.addEventListener("click", (e) => {
 	// note LI must be capital
 	if (e.target.tagName === "LI") {
 		const targetPanel = document.querySelector(e.target.dataset.target);
-		console.log(e.target.getAttribute("id"));
+		// changes panel
 		panels.forEach((panel) => {
 			panel === targetPanel
 				? panel.classList.add("active")
 				: panel.classList.remove("active");
 		});
+		// cvhanges tab color (probably better way of doing this)
 		tabsClass.forEach((tab) => {
 			tab.getAttribute("id") === e.target.getAttribute("id")
 				? tab.classList.add("active")
