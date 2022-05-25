@@ -144,12 +144,24 @@ addForm.addEventListener("submit", (e) => {
 	const deleteBtn = document.createElement("span");
 
 	// add content
-
 	deleteBtn.textContent = "delete";
 	bookName.textContent = value;
+
+	// add classes
+	// can also .remove
+	bookName.classList.add("name");
+	deleteBtn.classList.add("delete");
 
 	// append to document
 	li.appendChild(bookName);
 	li.appendChild(deleteBtn);
 	list.appendChild(li);
 });
+
+// style
+// li.style.color = "red"
+// li.style.marginTop = "60px"
+// li.className = "className"
+// adding more bunches together - use classList
+
+// attributes
