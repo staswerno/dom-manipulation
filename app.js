@@ -198,3 +198,19 @@ searchBar.addEventListener("keyup", (e) => {
 			: (book.style.display = "none");
 	});
 });
+
+// tabbed content
+
+const tabs = document.querySelector(".tabs");
+const panels = document.querySelectorAll(".panel");
+tabs.addEventListener("click", (e) => {
+	// note LI must be capital
+	if (e.target.tagName === "LI") {
+		const targetPanel = document.querySelector(e.target.dataset.target);
+		panels.forEach((panel) => {
+			panel === targetPanel
+				? panel.classList.add("active")
+				: panel.classList.remove("active");
+		});
+	}
+});
