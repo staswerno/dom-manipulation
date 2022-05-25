@@ -159,9 +159,28 @@ addForm.addEventListener("submit", (e) => {
 });
 
 // style
+
 // li.style.color = "red"
 // li.style.marginTop = "60px"
 // li.className = "className"
 // adding more bunches together - use classList
 
 // attributes
+
+// elementName.getAttribute('class')
+// elementName.getAttribute('href')
+// elementName.setAttribute('class', 'name-2)
+// elementName.hasAttribute('class')
+// returns bool
+// elementName.removeAttribute('class')
+
+// checkboxes and change events
+
+// hide books
+
+const hideBox = document.querySelector("#hide");
+hideBox.addEventListener("change", (e) => {
+	hideBox.checked
+		? (list.style.display = "none")
+		: (list.style.display = "block");
+});
