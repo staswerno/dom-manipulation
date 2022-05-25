@@ -202,15 +202,22 @@ searchBar.addEventListener("keyup", (e) => {
 // tabbed content
 
 const tabs = document.querySelector(".tabs");
+const tabsClass = document.querySelectorAll(".tab");
 const panels = document.querySelectorAll(".panel");
 tabs.addEventListener("click", (e) => {
 	// note LI must be capital
 	if (e.target.tagName === "LI") {
 		const targetPanel = document.querySelector(e.target.dataset.target);
+		console.log(e.target.getAttribute("id"));
 		panels.forEach((panel) => {
 			panel === targetPanel
 				? panel.classList.add("active")
 				: panel.classList.remove("active");
+		});
+		tabsClass.forEach((tab) => {
+			tab.getAttribute("id") === e.target.getAttribute("id")
+				? tab.classList.add("active")
+				: tab.classList.remove("active");
 		});
 	}
 });
