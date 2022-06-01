@@ -218,7 +218,7 @@ tabs.addEventListener("click", (e) => {
 				? panel.classList.add("active")
 				: panel.classList.remove("active");
 		});
-		// cvhanges tab color (probably better way of doing this)
+		// changes tab color (probably better way of doing this)
 		tabsClass.forEach((tab) => {
 			tab.getAttribute("id") === e.target.getAttribute("id")
 				? tab.classList.add("active")
